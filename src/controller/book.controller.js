@@ -19,6 +19,9 @@ async function bookSeat(req, res) {
         password: password
       }
     });
+    if (!user) {
+      return res.status(401).send("Invalid credentials");
+    }
     var userId = user.userId;
     const shows = await Show.findOne({
       where: {
@@ -26,6 +29,9 @@ async function bookSeat(req, res) {
       },
       include: [CinemaHall]
     });
+    if (!shows) {
+      return res.status(400).send("Invalid show id");
+    }
     var availableSeats = shows.cinemaHall.totalSeats;
     var updatedSeats = availableSeats - numberOfSeats;
     if (updatedSeats < 0) {

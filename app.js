@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/', routes);
 
 
-db.sequelize.sync({ force: true })
+db.sequelize.sync()
   .then(() => {
     console.log("Synced db.");
   })
