@@ -1,16 +1,16 @@
 const dbConfig = require("../config/db.config");
 
 const Sequelize = require("sequelize");
-const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
-  host: dbConfig.HOST,
-  dialect: dbConfig.dialect,
-  operatorsAliases: false,
+const sequelize = new Sequelize('postgres://dbiujzfhugfscs:977134ce803ef8bf8d9bf2f7ec43a0a39d4a0a729715ce0d78ec830fd88eaa74@ec2-3-219-52-220.compute-1.amazonaws.com:5432/d5tqldpd6tsg6k', {
 
   pool: {
     max: dbConfig.pool.max,
     min: dbConfig.pool.min,
     acquire: dbConfig.pool.acquire,
     idle: dbConfig.pool.idle
+  },
+  ssl: {
+    rejectUnauthorized: false
   }
 });
 
