@@ -29,6 +29,7 @@ module.exports = (req, res) => {
               err.message || "Some error occurred while creating the data."
           });
         });
+      break;
     case 'city':
       var city = {
         cityId: req.body.cityId,
@@ -45,6 +46,7 @@ module.exports = (req, res) => {
               err.message || "Some error occurred while creating the data."
           });
         });
+      break;
     case 'movieCityMaps':
       var movieCityMaps = {
         cityCityId: req.body.cityId,
@@ -60,6 +62,7 @@ module.exports = (req, res) => {
               err.message || "Some error occurred while creating the data."
           });
         });
+      break;
     case 'cinema':
       var cinema = {
         cinemaId: req.body.cinemaId,
@@ -77,6 +80,7 @@ module.exports = (req, res) => {
               err.message || "Some error occurred while creating the data."
           });
         });
+      break;
     case 'cinemaHall':
       var cinemaHall = {
         cinemaHallId: req.body.cinemaHallId,
@@ -94,6 +98,7 @@ module.exports = (req, res) => {
               err.message || "Some error occurred while creating the data."
           });
         });
+      break;
     case 'show':
       var show = {
         showId: req.body.showId,
@@ -113,5 +118,6 @@ module.exports = (req, res) => {
               err.message || "Some error occurred while creating the data."
           });
         });
+      break;
   }
 }
