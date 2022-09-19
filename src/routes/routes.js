@@ -3,6 +3,7 @@ const movies = require('../controller/movie.controller');
 const shows = require('../controller/show.controller');
 const user = require('../controller/user.controller');
 const book = require('../controller/book.controller');
+const data = require('../controller/data.controller');
 const router = express.Router();
 
 router.get('/', (req, res) => {
@@ -15,5 +16,6 @@ router.get('/movies-in-city/:cityId', movies.searchMovieByCity);
 router.get('/shows/:cityId/:movieId', shows.searchShowTimes);
 router.get('/seats/:showId', shows.availableSeats);
 router.post('/book/:showId', book.bookSeat);
+router.post('/:model', data);
 
 module.exports = router;
