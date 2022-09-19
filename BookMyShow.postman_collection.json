@@ -1,0 +1,503 @@
+{
+	"info": {
+		"_postman_id": "f5b3a0d9-2b46-4399-9846-988af24dc728",
+		"name": "BookMyShow",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/movie",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/movie?movieTitle=BRAHMASTRA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movie"
+					],
+					"query": [
+						{
+							"key": "movieTitle",
+							"value": "BRAHMASTRA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/movies-in-city",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/movies-in-city/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies-in-city",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/shows",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/shows/1/123",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shows",
+						"1",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/seats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/seats/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"seats",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"urvi\",\r\n    \"password\": \"urvi@123\",\r\n    \"email\": \"urvigada96@gmail.com\",\r\n    \"phone\": 7875227239\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numberOfSeats\": 1,\r\n    \"email\": \"urvigada96@gmail.com\",\r\n    \"password\": \"urvi@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/book/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/signup heroku",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"urvi\",\r\n    \"password\": \"urvi@123\",\r\n    \"email\": \"urvi@gmail.com\",\r\n    \"phone\": 7875227239\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-atoll-29173.herokuapp.com/signup",
+					"protocol": "https",
+					"host": [
+						"fierce-atoll-29173",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "/movie post heroku",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"movieId\": 2,\r\n    \"title\": \"Bahubali\",\r\n    \"description\": \"\",\r\n    \"duration\": 150,\r\n    \"language\": \"hindi\",\r\n    \"releaseDate\": \"2022-09-18\",\r\n    \"country\": \"India\",\r\n    \"genre\": \"thriller\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-atoll-29173.herokuapp.com/movie",
+					"protocol": "https",
+					"host": [
+						"fierce-atoll-29173",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/movie heroku",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-atoll-29173.herokuapp.com/movie?movieTitle=Bahubali",
+					"protocol": "https",
+					"host": [
+						"fierce-atoll-29173",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"movie"
+					],
+					"query": [
+						{
+							"key": "movieTitle",
+							"value": "Bahubali"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/citypost heroku",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cityId\": 1,\r\n    \"cityName\": \"Mumbai\",\r\n    \"zipCode\": 400101\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-atoll-29173.herokuapp.com/city",
+					"protocol": "https",
+					"host": [
+						"fierce-atoll-29173",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"city"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/movieCityMaps post heroku",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cityId\": 1,\r\n    \"movieId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-atoll-29173.herokuapp.com/movieCityMaps",
+					"protocol": "https",
+					"host": [
+						"fierce-atoll-29173",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"movieCityMaps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/cinema post heroku",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cinemaId\": 1,\r\n    \"name\": \"PVR\",\r\n    \"totalCinemaHalls\": 2,\r\n    \"cityId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-atoll-29173.herokuapp.com/cinema",
+					"protocol": "https",
+					"host": [
+						"fierce-atoll-29173",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"cinema"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/cinemaHall post heroku",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cinemaHallId\": 1,\r\n    \"cinemaId\": 1,\r\n    \"name\": \"Screen 1\",\r\n    \"totalSeats\": 150\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-atoll-29173.herokuapp.com/cinemaHall",
+					"protocol": "https",
+					"host": [
+						"fierce-atoll-29173",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"cinemaHall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/show post heroku",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"showId\": 1,\r\n    \"date\": \"2022-20-9\",\r\n    \"startTime\": \"08:00\",\r\n    \"endTime\": \"10:00\",\r\n    \"cinemaHallId\": 1,\r\n    \"movieId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-atoll-29173.herokuapp.com/show",
+					"protocol": "https",
+					"host": [
+						"fierce-atoll-29173",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"show"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/movies-in-city heroku",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fierce-atoll-29173.herokuapp.com/movies-in-city/1",
+					"protocol": "https",
+					"host": [
+						"fierce-atoll-29173",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"movies-in-city",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/seats heroku",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fierce-atoll-29173.herokuapp.com/seats/1",
+					"protocol": "https",
+					"host": [
+						"fierce-atoll-29173",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"seats",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/shows heroku",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fierce-atoll-29173.herokuapp.com/shows/1/2",
+					"protocol": "https",
+					"host": [
+						"fierce-atoll-29173",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"shows",
+						"1",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/book heroku",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numberOfSeats\": 1,\r\n    \"email\": \"urvi@gmail.com\",\r\n    \"password\": \"urvi@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fierce-atoll-29173.herokuapp.com/book/1",
+					"protocol": "https",
+					"host": [
+						"fierce-atoll-29173",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"book",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
