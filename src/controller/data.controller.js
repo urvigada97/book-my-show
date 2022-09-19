@@ -21,10 +21,10 @@ module.exports = (req, res) => {
       }
       Movie.create(movie)
         .then(data => {
-          res.send("Data entered successfully");
+          return res.send("Data entered successfully");
         })
         .catch(err => {
-          res.status(500).send({
+          return res.status(500).send({
             message:
               err.message || "Some error occurred while creating the data."
           });
@@ -37,10 +37,10 @@ module.exports = (req, res) => {
       }
       City.create(city)
         .then(data => {
-          res.send("Data entered successfully");
+          return res.send("Data entered successfully");
         })
         .catch(err => {
-          res.status(500).send({
+          return res.status(500).send({
             message:
               err.message || "Some error occurred while creating the data."
           });
@@ -52,10 +52,10 @@ module.exports = (req, res) => {
       }
       MovieCityMap.create(movieCityMaps)
         .then(data => {
-          res.send("Data entered successfully");
+          return res.send("Data entered successfully");
         })
         .catch(err => {
-          res.status(500).send({
+          return res.status(500).send({
             message:
               err.message || "Some error occurred while creating the data."
           });
@@ -69,10 +69,10 @@ module.exports = (req, res) => {
       }
       Cinema.create(cinema)
         .then(data => {
-          res.send("Data entered successfully");
+          return res.send("Data entered successfully");
         })
         .catch(err => {
-          res.status(500).send({
+          return res.status(500).send({
             message:
               err.message || "Some error occurred while creating the data."
           });
@@ -86,10 +86,10 @@ module.exports = (req, res) => {
       }
       CinemaHalls.create(cinemaHall)
         .then(data => {
-          res.send("Data entered successfully");
+          return res.send("Data entered successfully");
         })
         .catch(err => {
-          res.status(500).send({
+          return res.status(500).send({
             message:
               err.message || "Some error occurred while creating the data."
           });
@@ -105,10 +105,10 @@ module.exports = (req, res) => {
       }
       Shows.create(show)
         .then(data => {
-          res.send("Data entered successfully");
+          return res.send("Data entered successfully");
         })
         .catch(err => {
-          res.status(500).send({
+          return res.status(500).send({
             message:
               err.message || "Some error occurred while creating the data."
           });
